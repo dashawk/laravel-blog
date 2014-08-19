@@ -33,7 +33,7 @@
 							<h4>{{ link_to('post/' . blogUrl($post->title), $post->title) }}</h4>
 							<p>
 								{{ substr($post->body, 0, 100) . '...' }}
-								{{ link_to('', 'Read More') }}
+								{{ link_to('post/' . blogUrl($post->title), 'Read More') }}
 							</p>
 						</div>
 					@endforeach

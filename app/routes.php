@@ -3,6 +3,7 @@
 // Homepage
 Route::get('/', 'HomeController@index');
 
+// Show post by Category
 Route::get('category/{cat_id}/{post_title}', 'CategoryController@index');
 
 // RESTful resouce
