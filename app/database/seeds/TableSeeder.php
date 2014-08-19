@@ -33,5 +33,17 @@
 				'created_at' => new DateTime(),
 				'updated_at' => new DateTime()
 			]);
+
+			$seetCategory = DB::table('category')->insert([
+				'category_name' => 'Travel and Tours',
+				'created_at' => new DateTime(),
+				'updated_at' => new DateTime()
+			]);
+
+			DB::table('category')->insert([
+				'category_name' => 'Life and Leisure',
+				'created_at' => new DateTime(),
+				'updated_at' => new DateTime()
+			]);
 		}
 	}

@@ -9,8 +9,9 @@ class HomeController extends BaseController {
 	}
 
 	public function index() {
-		$this->data['posts'] = Post::all();
-
+		$this->data['posts'] = Post::paginate(5);
+		$this->data['category'] = Category::all();
+		
 		return View::make('home.index', $this->data);
 	}
 }

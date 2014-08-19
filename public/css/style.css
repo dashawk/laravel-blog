@@ -1,9 +1,27 @@
+#main-content {
+	display: block;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
 header {
 	display: block;
 	overflow: hidden;
 	border-bottom: 1px solid #ddd;
 }
 
-.mt-25 {
-	margin-top: 25px;
+/* Helper Classes */
+.mt-25 { margin-top: 25px; }
+
+/* Bootstrap Nav Override */
+.nav-stacked > li.active > a,
+.nav-stacked > li.active > a:hover,
+.nav-stacked > li.active > a:focus {
+	color: #fff;
+	background-color: #428bca;
+}
+
+.posts {
+	padding: 10px;
+	border-bottom: 1px solid #e9e9e9;
 }
