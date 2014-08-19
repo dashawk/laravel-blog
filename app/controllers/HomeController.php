@@ -10,6 +10,7 @@ class HomeController extends BaseController {
 
 	public function index() {
 		$this->data['posts'] = Post::all();
-		return View::make('home.index', [ 'data' => $this->data ]);
+
+		return View::make('home.index', $this->data);
 	}
 }
