@@ -1,0 +1,9 @@
+header {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+
+.mt-25 {
+	margin-top: 25px;
+}
